@@ -30,7 +30,40 @@
             {
                 "name" : ["booty"],
                 "url" : "https://www.youtube.com/watch?v=nzEXY5tRJ44"
+            },
+            {
+                "name" : ["yame","yamero"],
+                "url" : "https://www.youtube.com/watch?v=YyJRDA21PCs"
+            },
+            {
+                "name" : ["onichan-baka","onichan-hentai"],
+                "url" : "https://www.youtube.com/watch?v=5TGgJQgDf68"
+            },
+            {
+                "name" : ["onichan","oni"],
+                "url" : "https://www.youtube.com/watch?v=6_sUrcdRirc"
+            },
+            {
+                "name" : ["pop","popcat"],
+                "url" : "https://www.youtube.com/watch?v=I8Bml6iNjUU"
+            },
+            {
+                "name" : ["fbi","fbi-open","fbiopen"],
+                "url" : "https://www.youtube.com/watch?v=6fB8QiPTadY"
+            },
+			{
+                "name" : ["kimochi"],
+                "url" : "https://www.youtube.com/watch?v=hil7t_SB4n8"
+            },
+			{
+                "name" : ["chingchong", "chingcheng"],
+                "url" : "https://www.youtube.com/watch?v=3qVAv5ePMeI"
+            },
+			{
+                "name" : ["kimochiyamete"],
+                "url" : "https://www.youtube.com/watch?v=TLRErEb_Hds"
             }
+			
         ]
     }
 }

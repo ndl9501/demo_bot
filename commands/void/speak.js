@@ -9,7 +9,7 @@ module.exports = {
     aliases : ['say_void', 's_void', 'svoid', 'talk'],
     run :async (client, message, args)=>{
         if(!args[0]) return message.channel.send(`${message.author} nhập gì đi my friend (●'◡'●)`);
-
+        const lang = args[args.length-1];
         const str = args.join(' ');
         if(str.length > 300) message.channel.send(`${message.author} nhập ngắn thôi!!! Tôi đọc đau mồm lắm ༼ つ ◕_◕ ༽つ`);
 
@@ -20,7 +20,7 @@ module.exports = {
             message.delete();
         
         const audioUrl = await getAudioUrl(str , {
-            lang: 'vi',
+            lang: lang == 'en' ? 'en' : 'vi' ,
             slow: false,
             host: 'https://translate.google.com',
             timeout: 1000,

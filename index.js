@@ -41,6 +41,7 @@ client.on('message', message =>{
     if(!command) command = client.commands.get(client.aliases.get(cmd));
     if(command) command.run(client, message, args);
 
+    
 
     // switch(cmd){
     //     case `${prefix}ping`:

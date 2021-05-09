@@ -5,6 +5,6 @@ module.exports = {
     run : (client, message, args)=>{
         if(message.deletable)
             message.delete();
-        message.channel.send(`${message.author.username} pong !`);
+        message.channel.send(`${message.author.username} pong ${message.author.ping} ms!`);
     }
 }

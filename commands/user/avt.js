@@ -18,7 +18,9 @@ module.exports = {
         const avatarEmbed = new MessageEmbed()
                 .setImage(URL)
                 .setURL(URL)
-                .setTitle("¯\_(ツ)_/¯dow here!")
+                .setTitle("¯\_(ツ)_/¯ dow here!")
+                .setDescription(`(☞ﾟヮﾟ)☞ ${member.user}`)
+                .setColor("RANDOM")
         message.channel.send(avatarEmbed);
     }
 }

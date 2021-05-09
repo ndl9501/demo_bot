@@ -3,8 +3,13 @@ module.exports = {
     category : 'server',
     aliases : ['sv', 'server'],
     run : (client, message , args)=>{
-        if(message.deletable)
-            message.delete();
-        message.channel.send();
+        // full server 
+        // client.guilds.cache.forEach((guild) => {
+        //     message.channel.send(`server name : ${guild.name}\ntotal members: ${guild.memberCount}`);
+        // });
+        
+        message.channel.send(`
+            server name : ${message.guild.name}\ntotal members : ${message.guild.memberCount}
+        `)
     }
 }
