@@ -1,15 +1,21 @@
 
 const { getAudioUrl } = require('google-tts-api');
 
-
+const { iso_code }= require("./../../config.json");
 
 module.exports = {
     name: 'speak',
-    category: 'void',
+    category: 'voice',
     aliases : ['say_void', 's_void', 'svoid', 'talk'],
     run :async (client, message, args)=>{
         if(!args[0]) return message.channel.send(`${message.author} nhập gì đi my friend (●'◡'●)`);
-        const lang = args[args.length-1];
+        let lang = args[args.length-1];
+        if(!iso_code.find(ch => ch == lang)){
+            lang = "";
+        }
+        else{
+            args.pop();
+        }
         const str = args.join(' ');
         if(str.length > 300) message.channel.send(`${message.author} nhập ngắn thôi!!! Tôi đọc đau mồm lắm ༼ つ ◕_◕ ༽つ`);
 
@@ -20,7 +26,7 @@ module.exports = {
             message.delete();
         
         const audioUrl = await getAudioUrl(str , {
-            lang: lang == 'en' ? 'en' : 'vi' ,
+            lang: lang == '' ? 'vi' : lang ,
             slow: false,
             host: 'https://translate.google.com',
             timeout: 1000,
