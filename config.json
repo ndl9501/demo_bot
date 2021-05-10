@@ -289,7 +289,7 @@
             },
 			{
                 "name" : ["aaa", "ummm","mmm"],
-                "url" : "./../mp3/mmm.mp3"
+                "url" : "./mp3/mmm.mp3"
             },
 			{
                 "name" : ["intro", "ph","porn"],
@@ -297,7 +297,7 @@
             },
 			{
                 "name" : ["niisan", "nii"],
-                "url" : "./../mp3/nii.mp3"
+                "url" : "./mp3/nii.mp3"
             }
         ]
     }
