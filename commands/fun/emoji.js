@@ -13,13 +13,13 @@ module.exports = {
         
         let custom = Util.parseEmoji(emoji);
         const embed = new MessageEmbed()
-            .setTitle(`Zoom  ${emoji}`)
             .setColor('RANDOM')
+            // .setTitle(`Zoom  ${emoji}`)
         if(!custom) return message.channel.send(` ${message.author} emoji không hợp lệ`);
         if(custom.id){
             let link =`https://cdn.discordapp.com/emojis/${custom.id}.${custom.animated ? 'gif' : 'png'}`;
             embed.setImage(link)
-                .setFooter(`Emoji : ${custom.id}`);
+                // .setFooter(`Emoji : ${custom.id}`);
             if(message.deletable)
                 message.delete();
                 return message.channel.send(embed);

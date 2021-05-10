@@ -43,6 +43,7 @@ module.exports = {
                 })
             })
         } catch (error) {
+            voidChannel.leave();
             message.channel.send(`Bot lỗi, vui lòng thử lại sau !(┬┬﹏┬┬)`);
             console.log(error);
         }

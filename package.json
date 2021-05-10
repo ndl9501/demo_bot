@@ -10,6 +10,7 @@
     "ffmpeg-static": "^4.3.0",
     "google-tts-api": "^2.0.2",
     "twemoji-parser": "^13.0.0",
+    "youtube-search": "^1.1.6",
     "ytdl-core": "^4.7.0"
   },
   "devDependencies": {},

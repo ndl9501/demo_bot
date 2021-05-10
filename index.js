@@ -36,6 +36,7 @@ client.on('message', message =>{
     const args = message.content.slice(prefix.length).trim().split(' ');
     const cmd = args.shift().toLowerCase();
 
+   
     
     if(cmd.length === 0) return;
     let command = client.commands.get(cmd);

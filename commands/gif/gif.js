@@ -14,13 +14,16 @@ module.exports = {
                 attachment = value.url;
             }
         })
-
-        attachment = new MessageAttachment(attachment);
+        const embed = new MessageEmbed()
+            .setColor('RANDOM')
+            .setTitle('')
+            embed.setImage(attachment);
 
         if(message.deletable) message.delete();
         const member = message.mentions.members.first() || message.guild.members.cache.get(args[1]) || message.member;
         
-        message.mentions.members.first() || message.guild.members.cache.get(args[1]) ? message.channel.send(`${member.user} (¬‿¬)` , attachment ) : message.channel.send(attachment);
+        message.mentions.members.first() || message.guild.members.cache.get(args[1]) ? message.channel.send(`${member.user} (¬‿¬)` , embed ) : message.channel.send(embed);
+        
     }
 }
 

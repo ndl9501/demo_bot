@@ -1,5 +1,5 @@
-const { MessageAttachment } = require('discord.js');
 
+const { Util, MessageEmbed } = require('discord.js');
 
 module.exports = {
     name: 'dick',
@@ -7,8 +7,11 @@ module.exports = {
     aliases : ['d*ck','dick', 'cac'],
     run : (client, message, args)=>{
         if(message.deletable) message.delete();
-            const attachment = new MessageAttachment(`https://media.giphy.com/media/3ohc1cFiKmGa0n8Sis/giphy.gif`);  
-            message.channel.send( attachment);
+
+        const embed = new MessageEmbed()
+            .setColor('RANDOM')
+            embed.setImage('https://media.giphy.com/media/3ohc1cFiKmGa0n8Sis/giphy.gif')
+            message.channel.send( embed);
     }
 }
 
