@@ -1,5 +1,6 @@
 const search = require("youtube-search");
 const music = require('./music.js');
+const { API_KEY } = require('./../../config.json')
 module.exports = {
     name: 'search',
     category: 'voice',
@@ -7,7 +8,7 @@ module.exports = {
     run: async (client, message, args) => {
         var opts = {
             maxResults: 1,
-            key: 'AIzaSyBT7XNei6stuV-_rq7rzDg9G3x_0ZVf6wQ'
+            key: API_KEY
         };
 
         
@@ -16,9 +17,9 @@ module.exports = {
         
         const value = args.join(' ');
         search(value, opts, (err, results) => {
-            if (err) return console.log("err :", err);
+            if (err) return console.log("err ~~ :", err);
             else{
-                console.log(results[0].link);
+                // console.log(results[0].link);
                 music.run(client, message, results[0].link);
             }
         });
