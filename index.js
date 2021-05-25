@@ -6,7 +6,7 @@ const { parse } = require("twemoji-parser");
 
 client.on('ready', ()=>{
     console.log(`${client.user.username} đã sẵn sàng hoạt động !\n ${client.ws.ping} ms`);
-
+    
     client.user.setPresence({
         activity:{
             name: "Đang xem sẽ !",
@@ -21,6 +21,11 @@ client.on('ready', ()=>{
 client.commands = new Collection();
 client.aliases = new Collection();
 
+// queue 
+client.queue = new Map();
+
+
+
 ["command"].forEach(handler =>{
     require(`./handlers/${handler}`)(client);
 });
@@ -33,10 +38,10 @@ client.on('message', message =>{
 
     if(!message.content.startsWith(`${prefix}`)) return;
 
-    const args = message.content.slice(prefix.length).trim().split(' ');
+    const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
-   
+    
     
     if(cmd.length === 0) return;
     let command = client.commands.get(cmd);

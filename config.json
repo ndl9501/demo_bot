@@ -1,5 +1,5 @@
 {
-    "token": "ODM5Njk5MDMyNzExODg4OTI2.YJNcqg.vpkuhMGLwM2Ik9wxeJAqEyO_Lqw",
+    "token": "ODM5Njk5MDMyNzExODg4OTI2.YJNcqg.nlfeT-c_Wjcv8vkEM70ENjuRxN0",
     "prefix" : "-",
     "API_KEY" : "AIzaSyB9Lpwl9BuBWHEAkh9gZ30NN-0lGtVG30w",
     "iso_code" : [
@@ -200,6 +200,10 @@
         {
             "name" : ["gay"],
             "url" : "https://media.giphy.com/media/ZcYe7jWTLRzkQ/giphy.gif"
+        },
+		{
+            "name" : ["moew"],
+            "url" : "https://media.giphy.com/media/3oriO14cq5QY7y3aUw/giphy.gif"
         }
     ]},
     "objYtb" : {

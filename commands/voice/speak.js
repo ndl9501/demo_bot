@@ -10,13 +10,18 @@ module.exports = {
     run :async (client, message, args)=>{
         if(!args[0]) return message.channel.send(`${message.author} nhập gì đi my friend (●'◡'●)`);
         let lang = args[args.length-1];
+        let str = "";
+        
         if(!iso_code.find(ch => ch == lang)){
             lang = "";
         }
         else{
             args.pop();
         }
-        const str = args.join(' ');
+        str = args.join(' ');
+        if(message.author.id == "817919574388637696"){
+            str = "cặc chiều ngu"
+        }
         if(str.length > 300) message.channel.send(`${message.author} nhập ngắn thôi!!! Tôi đọc đau mồm lắm ༼ つ ◕_◕ ༽つ`);
 
         const voidChannel = message.member.voice.channel;

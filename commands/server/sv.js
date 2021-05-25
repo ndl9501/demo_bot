@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js")
+const { MessageEmbed, Client } = require("discord.js")
 
 module.exports = {
     name: 'sv',
@@ -11,11 +11,11 @@ module.exports = {
         // });
         const embed = new MessageEmbed()
                         .setColor("RAMDOM")
-                        .setAuthor(message.guild.bot)
+                        .setAuthor(message.author.user)
                         .setTitle(`${message.guild.name}`)
-                        .setFooter(now())
-        message.channel.send(`
-            server name : ${message.guild.name}\ntotal members : ${message.guild.memberCount}
-        `)
+                        .setImage(message.guild.banner)
+                        .setDescription(`${message.guild.memberCount}`)
+                        .setTimestamp()
+        message.channel.send(embed)
     }
 }
