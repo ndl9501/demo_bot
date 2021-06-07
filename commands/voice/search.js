@@ -19,7 +19,10 @@ module.exports = {
         const value = args.join(' ');
         console.log("value : " + value);
         search(value, opts,async (err, results) => {
-            if (err) return console.log("err ~~ :", err);
+            if (err) {
+                console.log("err ~~ :", err);
+                return;
+            }
             else{
                 // const song = {
                 //     id : results[0].id,

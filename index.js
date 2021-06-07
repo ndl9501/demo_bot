@@ -24,7 +24,7 @@ client.aliases = new Collection();
 // queue 
 client.queue = new Map();
 
-
+// Map()
 
 ["command"].forEach(handler =>{
     require(`./handlers/${handler}`)(client);

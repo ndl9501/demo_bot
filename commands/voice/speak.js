@@ -22,6 +22,10 @@ module.exports = {
         if(message.author.id == "817919574388637696"){
             str = "cặc chiều ngu"
         }
+        if(message.author.id == "563504260679991313"){
+            str = "phúc ngu"
+        }
+        
         if(str.length > 300) message.channel.send(`${message.author} nhập ngắn thôi!!! Tôi đọc đau mồm lắm ༼ つ ◕_◕ ༽つ`);
 
         const voidChannel = message.member.voice.channel;
