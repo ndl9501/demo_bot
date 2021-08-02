@@ -1,6 +1,6 @@
 const search = require("youtube-search");
 const music = require('./music.js');
-const { API_KEY } = require('./../../config.json');
+const { GG_API_KEY } = require('./../../config.json');
 const { MessageEmbed } = require("discord.js");
 module.exports = {
     name: 'search',
@@ -9,7 +9,7 @@ module.exports = {
     run: async (client, message, args) => {
         var opts = {
             maxResults: 1,
-            key: API_KEY
+            key: GG_API_KEY
         };
         
         if(!args[0])

@@ -9,7 +9,7 @@ client.on('ready', ()=>{
     
     client.user.setPresence({
         activity:{
-            name: "Đang xem sẽ !",
+            name: "xem sẽ !",
             type: "WATCHING",
         },
         status: "online",

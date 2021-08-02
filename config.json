@@ -1,9 +1,10 @@
 {
     
-    "token1": "",
-    "token" : "",
-    "prefix" : "--",
-    "API_KEY" : "AIzaSyAP3je7NhhaNuzy_eSArB96B4WLN-Fk9tA",
+    "token1": "ODM5Njk5MDMyNzExODg4OTI2.YJNcqg.ezGPkY0re5djByQw6Ngfxo79iAs",
+    "token" : "ODQwNjY5MTIwMzcwNzA0NDA1.YJbkIQ.0P09nloDLnj7ktgDZdqINlg30vs",
+    "prefix" : ".",
+    "GG_API_KEY" : "AIzaSyAP3je7NhhaNuzy_eSArB96B4WLN-Fk9tA",
+    "WEATHER_API_KEY" : "202f2bdddafe5273479851c2df94c356",
     "iso_code" : [
         "ab",
         "aa",
